@@ -4,57 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Project</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JS-Employee Project</title>
+    <link rel="Stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h5>Sign Up</h5>
-    </div>
-     <fieldset class="margin">
-      <h6>Filter ui cards via their profession.</h6>
-      <select name="dropdown" id="dropdown">
-        <option value="developer">Developer</option>
-        <option value="profession">Profession</option>
-        <option value="admin">Admin</option>
-        </select>
-        <br>
-        <div id="result"></div>
-        <br>
-        <button id="btn">Filter</button>
-        <div class="second">
-            <h5>Add a new User</h5>
-            <div class="imp">
-            <div class="name">
-                <label for="fname" id="name">Enter Name</label>
-                <div><input type="text" ></div>
-            </div>
-            <div class="pname">
-                <label for="pname">Enter Profession</label>
-                <div><input type="text"  id="pname"></div>
-            </div>
-            <div class="aname">
-                <label for="aname">Enter Age</label>
-                <div><input type="number" id="aname " ></div>
-            </div>
-        </div>
-        <button id="ad">Add User</button>
-    </div>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                    <th id="tname">Name</th>
-                    <th id="tpname">Profession</th>
-                    <th id="taname">Age</th>
-                </tr>
-            </thead>
-            <tbody class="cart-body">
-                 </tbody>
-        </table>
-    </div>
 
-     </fieldset>
+   <div id="titleOne">Filter ui cards via their profession.</div> 
+
+   <form>
+   <select id="selectProfession">
+    <option value="Profession" selected> Profession</option>
+    <option value="developer"> Developer</option>
+    <option value="admin"> Admin </option>
+   </select>
+   </form>
+
+   <section id="cards">
+
+    <div class="card"><span>1. </span><span>Name : John</span><span>Profession : Developer</span><span>Age : 18</span></div>
+    
+    <div class="card"><span>2. </span><span>Name : Jack</span><span>Profession : Developer</span><span>Age : 20</span></div>
+
+    <div class="card"><span>3. </span><span>Name : Karen</span><span>Profession : Admin</span><span>Age : 19</span></div>
+
+   </section>
+
+   <button type="button" id="filterBtn"> Filter</button>
+
+
+   <div id="titleTwo">Add a new User</div> 
+
+   <form id="addPerson">
+
+    <label for="nameInput">Enter Name</label>
+    <label for="professionInput">Enter Profession</label>
+    <label for="ageInput">Enter Age</label>
+
+    <input type="text" id="nameInput">
+    <input type="text" id="professionInput">
+    <input type="text" id="ageInput">
+
+   </form>
+
+   <button type="button" id="addUserBtn">Add User</button>
+
+
     <script src="script.js"></script>
 </body>
 </html>
