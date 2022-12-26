@@ -1,41 +1,112 @@
 *{
-    margin:0px;
-    padding:0px;
+    background-color: black;
+    color: white;
+    font-style: normal;
+    font-family: "Inter";
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+
+#titleOne{
+    position: absolute;
+    width: 378px;
+    height: 29px;
+    left: 58px;
+    top: 105px;
+}
+
+select{
     box-sizing: border-box;
- background-color: black;
- color: aliceblue;
+    
+    position: absolute;
+    width: 196px;
+    height: 58px;
+    left: 58px;
+    top: 199px;
+    
+    font-style: normal;  
 }
-h5{
-    color: white;
-    margin:20px;
+
+#cards{
+    position: absolute;
+    left: 58px;
+    top: 306px;
 }
-.margin{
-    color:white;
-    margin:20px;
-}
-h6{
-    margin:20px;
-    color: white;
-}
-.imp{
+
+.card{
     display: flex;
-    gap:25px;
-    margin:25px;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2%;
+    margin: 2%;
+    width: 536px;
+    height: 59px;
+    
+
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18;
+    line-height: 22px;
+
 }
-#dropdown{
-    margin:25px;
-}
-button{
-    margin:25px;
-}
-#ad{
-    background-color: white;
+
+#filterBtn{
+    position: absolute;
+    width: 226px;
+    height: 58px;
+    left: 58px;
+    top: 683px;   
+    background: #FFFFFF;
+    
+    text-align: center;
     color: black;
 }
-#btn{
-    background-color: white;
-    color: black;
+
+#titleTwo{
+    position: absolute;
+    width: 175px;
+    height: 29px;
+    left: 58px;
+    top: 762px;
 }
-th{
-    padding-right: 110px;
+
+#addPerson{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+    
+    position: absolute;
+    top: 840px;
+    left:58px;
+}
+
+input{
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+
+   
+    width: 475px;
+    height:56px;
+}
+
+#addUserBtn{
+    position: absolute;
+    width: 226px;
+    height: 58px;
+    left: 58px;
+    top: 983px;   
+    background: #FFFFFF;
+    
+    text-align: center;
+    color: black;
+ 
 }
